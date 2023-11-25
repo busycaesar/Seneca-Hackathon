@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Instagram from "../svgs/instagram.png";
 import Facebook from "../svgs/facebook.png";
@@ -8,22 +8,39 @@ import Tiktok from "../svgs/tiktok.png";
 
 export default function SocialMediaIcons() {
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={1}>
-        <Image src={Instagram} alt="Link to Instagram" width={25} />
-      </Grid>
-      <Grid item xs={1}>
-        <Image src={Facebook} alt="Link to Facebook" width={25} />
-      </Grid>
-      <Grid item xs={1}>
-        <Image src={LinkedIn} alt="Link to LinkedIn" width={25} />
-      </Grid>
-      <Grid item xs={1}>
-        <Image src={Twitter} alt="Link to Twitter" width={25} />
-      </Grid>
-      <Grid item xs={1}>
-        <Image src={Tiktok} alt="Link to Tiktok" width={25} />
-      </Grid>
-    </Grid>
+    <Row className="row-cols-auto no-gutters">
+      <Col>
+        <Image
+          src={Instagram}
+          style={{ margin: "0.05em 0.25em" }}
+          alt="Link to Instagram"
+          width={25}
+        />
+        <Image
+          src={Facebook}
+          style={{ margin: "0.05em 0.25em" }}
+          alt="Link to Facebook"
+          width={25}
+        />
+        <Image
+          src={LinkedIn}
+          style={{ margin: "0.05em 0.25em" }}
+          alt="Link to LinkedIn"
+          width={25}
+        />
+        <Image
+          src={Twitter}
+          style={{ margin: "0.05em 0.25em" }}
+          alt="Link to Twitter"
+          width={25}
+        />
+        <Image
+          src={Tiktok}
+          style={{ margin: "0.05em 0.25em" }}
+          alt="Link to Tiktok"
+          width={25}
+        />
+      </Col>
+    </Row>
   );
 }
