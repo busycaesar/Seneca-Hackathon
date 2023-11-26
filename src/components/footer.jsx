@@ -6,11 +6,11 @@ import { Container, Row, Col } from "react-bootstrap";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div id="footer">
       <Container>
         <h2>Need Help?</h2>
         <Row>
-          <Col md className="mb-3">
+          <Col md className="mb-4">
             <h3>Email us</h3>
             <Image
               src={Email}
@@ -25,14 +25,14 @@ export default function Footer() {
               info@senecahackathon.com
             </a>
           </Col>
-          <Col md className="mb-3">
+          <Col md className="mb-4">
             <h3>Address</h3>
             <p style={{ margin: 0 }}>
               Seneca College Newnham Campus, 1750 Finch Ave E., North York,
               Toronto, ON M2J 2X5
             </p>
           </Col>
-          <Col md className="mb-3">
+          <Col md className="mb-4">
             <h3>Social Media</h3>
             <SocialMediaIcons />
           </Col>

@@ -14,31 +14,31 @@ export default function SocialMediaIcons() {
           src={Instagram}
           style={{ margin: "0.05em 0.25em" }}
           alt="Link to Instagram"
-          width={25}
+          width={20}
         />
         <Image
           src={Facebook}
           style={{ margin: "0.05em 0.25em" }}
           alt="Link to Facebook"
-          width={25}
+          width={20}
         />
         <Image
           src={LinkedIn}
           style={{ margin: "0.05em 0.25em" }}
           alt="Link to LinkedIn"
-          width={25}
+          width={20}
         />
         <Image
           src={Twitter}
           style={{ margin: "0.05em 0.25em" }}
           alt="Link to Twitter"
-          width={25}
+          width={20}
         />
         <Image
           src={Tiktok}
           style={{ margin: "0.05em 0.25em" }}
           alt="Link to Tiktok"
-          width={25}
+          width={20}
         />
       </Col>
     </Row>

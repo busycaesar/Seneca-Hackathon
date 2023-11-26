@@ -1,40 +1,3 @@
-// import SocialMediaIcons from "./socialMediaIcons";
-// import { AppBar, Toolbar, Button, Link } from "@mui/material";
-
-// export default function NavBar() {
-//   return (
-//     <>
-//       <AppBar
-//         position="unset"
-// sx={{
-//   backgroundColor: "white",
-//   color: "black",
-//   top: 0,
-//   borderBottom: "2px solid red",
-//   boxShadow: "none",
-// }}
-//       >
-//         <div className="navBarTop">
-//           <Toolbar>
-//             <SocialMediaIcons />
-//           </Toolbar>
-//         </div>
-//         <Toolbar>
-//           <h1>Seneca Hackathon</h1>
-//           <div style={{ display: "flex", marginLeft: "auto" }}>
-//             <Button color="inherit">
-//               <Link href="/">Home</Link>
-//             </Button>
-//             <Button color="inherit">
-//               <Link href="/aboutUs">About Us</Link>
-//             </Button>
-//           </div>
-//         </Toolbar>
-//       </AppBar>
-//     </>
-//   );
-// }
-
 import * as React from "react";
 import SocialMediaIcons from "./socialMediaIcons";
 import AppBar from "@mui/material/AppBar";
@@ -49,11 +12,13 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Image from "next/image";
+import HackathonLogo from "../svgs/hack-logo.png";
+import { Container, Row, Col } from "react-bootstrap";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Contact"];
+const navItems = ["Home"];
 
 export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -92,9 +57,7 @@ export default function DrawerAppBar() {
         }}
       >
         <div className="navBarTop">
-          <Toolbar>
-            <SocialMediaIcons />
-          </Toolbar>
+          <SocialMediaIcons />
         </div>
         <Toolbar>
           <IconButton
@@ -106,13 +69,28 @@ export default function DrawerAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <h1>Seneca Hackathon</h1>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "black" }}>
-                  {item}
-                </Button>
-              ))}
+            <Image
+              src={HackathonLogo}
+              alt="Seneca Hackathon 2024's logo"
+              width={80}
+              height={60}
+              style={{ float: "left" }}
+            />
+            <div style={{ fontSize: "small" }}>
+              <strong>hosted by</strong>
+            </div>
+            <Image
+              src="https://www.senecacollege.ca/content/dam/projects/seneca/seneca-logo.svg"
+              alt="Seneca College's logo"
+              width={80}
+              height={30}
+            />
+            {navItems.map((item) => (
+              <Button key={item} sx={{ color: "black" }}>
+                {item}
+              </Button>
+            ))}
           </Box>
         </Toolbar>
       </AppBar>
