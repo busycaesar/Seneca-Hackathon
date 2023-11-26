@@ -47,7 +47,7 @@ p {
   bottom: 0;
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 500px) {
   #footer {
     position: relative;
   }
