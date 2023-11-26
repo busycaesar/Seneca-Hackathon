@@ -8,7 +8,6 @@ body {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  min-height: 100vh;
 }
 
 h2 {
@@ -32,7 +31,6 @@ p {
   justify-content: right;
   display: flex;
   padding: 0.25em;
-  height: fit-content;
 }
 
 .navBarBody {
@@ -40,12 +38,17 @@ p {
 }
 
 #footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   padding: 1.25% 0;
   background-color: red;
   color: white;
-  display: flex;
   justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+@media screen and (max-width: 345px) {
+  #footer {
+    position: relative;
+  }
 }

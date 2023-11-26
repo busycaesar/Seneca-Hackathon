@@ -15,7 +15,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import HackathonLogo from "../svgs/hack-logo.png";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const drawerWidth = 240;
 const navItems = [];
