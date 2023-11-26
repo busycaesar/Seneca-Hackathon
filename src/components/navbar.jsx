@@ -18,7 +18,7 @@ import HackathonLogo from "../svgs/hack-logo.png";
 import { Container, Row, Col } from "react-bootstrap";
 
 const drawerWidth = 240;
-const navItems = ["Home"];
+const navItems = [];
 
 export default function DrawerAppBar() {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -29,7 +29,21 @@ export default function DrawerAppBar() {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <h1>Seneca Hackathon</h1>
+      <Image
+        src={HackathonLogo}
+        alt="Seneca Hackathon 2024's logo"
+        width={100}
+        height={100}
+      />
+      <div style={{ fontSize: "small", marginTop: "0.5em" }}>
+        <strong>hosted by</strong>
+      </div>
+      <Image
+        src="https://www.senecacollege.ca/content/dam/projects/seneca/seneca-logo.svg"
+        alt="Seneca College's logo"
+        width={80}
+        height={30}
+      />
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -70,27 +84,34 @@ export default function DrawerAppBar() {
             <MenuIcon />
           </IconButton>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Image
-              src={HackathonLogo}
-              alt="Seneca Hackathon 2024's logo"
-              width={80}
-              height={60}
-              style={{ float: "left" }}
-            />
-            <div style={{ fontSize: "small" }}>
-              <strong>hosted by</strong>
-            </div>
-            <Image
-              src="https://www.senecacollege.ca/content/dam/projects/seneca/seneca-logo.svg"
-              alt="Seneca College's logo"
-              width={80}
-              height={30}
-            />
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "black" }}>
-                {item}
-              </Button>
-            ))}
+            <Row>
+              <Col>
+                <Image
+                  src={HackathonLogo}
+                  alt="Seneca Hackathon 2024's logo"
+                  width={75}
+                  height={75}
+                />
+              </Col>
+              <Col className="d-flex align-items-center">
+                <div style={{ fontSize: "small" }}>
+                  hosted by
+                  <Image
+                    src="https://www.senecacollege.ca/content/dam/projects/seneca/seneca-logo.svg"
+                    alt="Seneca College's logo"
+                    width={80}
+                    height={30}
+                  />
+                </div>
+              </Col>
+              <Col>
+                {navItems.map((item) => (
+                  <Button key={item} sx={{ color: "black" }}>
+                    {item}
+                  </Button>
+                ))}
+              </Col>
+            </Row>
           </Box>
         </Toolbar>
       </AppBar>

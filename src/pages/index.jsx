@@ -2,7 +2,7 @@
 export default function Home() {
   return (
     <>
-      <h1>Seneca Hackathon 2024</h1>
+      <h1 style={{color:"red"}}>Seneca Hackathon 2024</h1>
       <p>
         We are more than excited to announce that Seneca Hackathon is again
         Coming Soon!!
@@ -13,7 +13,10 @@ export default function Home() {
       </p>
       <p>
         Untill then, we would invite you to please checkout our{" "}
-        <a href="https://www.senecahackathon.com/">last year's Website</a>!
+        <a href="https://www.senecahackathon.com/" target="_blank">
+          last year's Website
+        </a>
+        !
       </p>
     </>
   );
