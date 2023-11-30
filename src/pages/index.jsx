@@ -1,22 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
+
 export default function Home() {
   return (
     <>
-      <h1 style={{ color: "red" }}>Seneca Hackathon 2024</h1>
+      <h1 style={{ color: "red" }}>
+        <strong>We are coming soon!</strong>
+      </h1>
       <p>
-        We are more than excited to announce that Seneca Hackathon is again
-        Coming Soon!!
-      </p>
-      <p>
-        We will post the Registration dates soon on this page. Hence, stay
-        connected to know more.
-      </p>
-      <p>
-        Untill then, we would invite you to please checkout our
+        We are coming soon, in mean time you can visit what we did{" "}
         <a href="https://www.senecahackathon.com/" target="_blank">
-          last year's Website
+          last year
         </a>
-        !
+        .
       </p>
     </>
   );
