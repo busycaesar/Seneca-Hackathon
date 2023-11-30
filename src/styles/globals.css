@@ -52,13 +52,10 @@ p {
   bottom: 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .page-content {
-    margin-bottom: 5em;
+    margin-bottom: 7em;
   }
-}
-
-@media screen and (max-width: 100px) {
   #footer {
     position: relative;
   }
