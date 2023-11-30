@@ -32,8 +32,8 @@ export default function DrawerAppBar() {
       <Image
         src={HackathonLogo}
         alt="Seneca Hackathon 2024's logo"
-        width={100}
-        height={100}
+        width={130}
+        height={130}
       />
       <div style={{ fontSize: "small", marginTop: "0.5em" }}>
         <strong>hosted by</strong>
@@ -89,8 +89,8 @@ export default function DrawerAppBar() {
                 <Image
                   src={HackathonLogo}
                   alt="Seneca Hackathon 2024's logo"
-                  width={75}
-                  height={75}
+                  width={110}
+                  height={110}
                 />
               </Col>
               <Col className="d-flex align-items-center">
