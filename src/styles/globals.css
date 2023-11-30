@@ -38,6 +38,10 @@ p {
   background-color: white;
 }
 
+.page-content {
+  margin: 1.5em;
+}
+
 #footer {
   width: 100%;
   padding: 1.25% 0;
@@ -46,6 +50,18 @@ p {
   justify-content: center;
   position: fixed;
   bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .page-content {
+    margin-bottom: 3em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .page-content {
+    margin-bottom: 5em;
+  }
 }
 
 @media screen and (max-width: 100px) {

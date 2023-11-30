@@ -7,7 +7,7 @@ export default function Layout(props) {
   return (
     <>
       <NavBar />
-      <div style={{ margin: "1.5em" }}>{props.children}</div>
+      <div className="page-content">{props.children}</div>
       <Footer />
     </>
   );
